@@ -1,5 +1,5 @@
 # Code origin
-This repository is based on a fork from https://github.com/henridwyer/docker-letsencrypt-cron, but has changed significantly since then.
+This repository is based on a fork from https://github.com/henridwyer/docker-letsencrypt-cron, but has changed significantly since then. Henry Dwyers license (MIT) is available in `LICENSE_BASE`.
 
 # docker-letsencrypt-cron
 Create and automatically renew website SSL certificates using the letsencrypt free certificate authority, and its client *certbot*.
@@ -158,6 +158,14 @@ Find out more about letsencrypt: https://letsencrypt.org
 Certbot github: https://github.com/certbot/certbot
 
 # Changelog
+### 0.5.1
+- Add license
+
+### 0.5.0
+- Fix crontab
+- Add /scripts to $PATH
+- Add `renew` and `issue` executables
+
 ### 0.4
 - Rewrite
 - Use config-file instead of environment-variables

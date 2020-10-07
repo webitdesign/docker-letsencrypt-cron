@@ -11,6 +11,8 @@ RUN apk add --no-cache --virtual .build-deps linux-headers gcc musl-dev\
   && apk del .build-deps\
   && mkdir /scripts
 
+ENV PATH="/scripts:${PATH}"
+
 ADD crontab /etc/crontabs
 RUN crontab /etc/crontabs/crontab
 
